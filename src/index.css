@@ -1,0 +1,138 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+/*
+  2. Remove default margin
+*/
+* {
+  margin: 0;
+}
+/*
+  3. Allow percentage-based heights in the application
+*/
+html, body {
+  height: 100%;
+}
+/*
+  Typographic tweaks!
+  4. Add accessible line-height
+  5. Improve text rendering
+*/
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+/*
+  6. Improve media defaults
+*/
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+/*
+  7. Remove built-in form typography styles
+*/
+input, button, textarea, select {
+  font: inherit;
+}
+/*
+  8. Avoid text overflows
+*/
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+/*
+  9. Create a root stacking context
+*/
+#root, #__next {
+  isolation: isolate;
+}
+
+/* DEFAULT STYLING */
+/* Custom font imports */
+@font-face {
+  font-family: 'good_times';
+  src: url('/font/good_times_rg-webfont.woff2') format('woff2'),
+       url('/font/good_times_rg-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'lato';
+  src: url('/font/lato-medium-webfont.woff2') format('woff2'),
+       url('/font/lato-medium-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* utility */
+.heading 
+{
+  font-family: 'good_times', 'sans-serif';
+}
+
+.regular
+{
+  font-family: 'lato', 'sans-serif';
+}
+
+
+/* GLOBAL STYLING */
+body
+{
+  font-family: 'lato', 'sans-serif';
+}
+
+h1,
+h2{
+  font-family: 'good_times', 'sans-serif';
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+/*
+* Custom styling
+*/
+
+.navbar
+{
+  position: fixed;
+  width: 3rem;
+}
+
+.profile-img
+{
+  max-width: 35rem;
+}
+
+.darkgradient
+{
+  background: linear-gradient(120deg,#4B4D51, #282A2F);
+}
+
+.profile-card
+{
+  background: linear-gradient(120deg,#4B4D51, #282A2F);
+  padding: 1rem;
+}
+
+.techlist1{
+  left: -300px;
+  top: -80px;
+  z-index: 1;
+}
